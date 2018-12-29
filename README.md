@@ -2,6 +2,11 @@ Information of the setup can be viewed at the bottom of this file, the project w
 
 Setup Steps:
 
+Search Create React App should be at https://github.com/facebook/create-react-app
+
+npx create-react-app my-app
+where my-app is the name of the app
+
 1. Enable CSS modules so CSS classes in CSS file can be scoped to a specific component and not global.
 	a. npm run eject
 	b. Open files webpack.config.dev.js and webpack.config.prod.js and change test: cssRegex in loader: getStyleLoaders() add modules: true, localIdentName: '[name]__[local]__[hash:base64:5]'
@@ -16,7 +21,9 @@ Setup Steps:
 
 5. Enable routing
 	a. npm install --save react-router-dom
-np
+
+6. Enable Testing 
+	a. npm install --save enzyme react-test-renderer enzyme-adapter-react-16
 
 ---
 
